@@ -11,6 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.4.6"
+    "@astrojs/tailwind": "^2.0.2",
+    "astro": "^1.4.6",
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
   }
 }
