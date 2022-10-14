@@ -1,4 +1,37 @@
 ---
+const projects = [
+  {
+    label: "Medical Data Acquisition",
+    imgUrl:
+      "https://img.freepik.com/free-psd/logo-mockup-glass-door_35913-2083.jpg?w=2000",
+  },
+  {
+    label: "Medical Data Acquisition",
+    imgUrl:
+      "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2021/07/Pengertian-Mockup-Freepik.jpg",
+  },
+  {
+    label: "Medical Data Acquisition",
+    imgUrl:
+      "http://unblast.com/wp-content/uploads/2019/10/Digital-Mockup-2.jpg",
+  },
+  {
+    label: "Medical Data Acquisition",
+    imgUrl: "https://i.ytimg.com/vi/f5FRcbfHKck/maxresdefault.jpg",
+  },
+];
 ---
 
-<div class="min-h-[340px] px-10 flex items-center justify-center">WIP</div>
+<div class="my-[140px] flex flex-col items-start px-10">
+  <p class="text-center text-[24px] mb-[64px]">works</p>
+  <div class="grid grid-cols-1 gap-[64px]">
+    {
+      projects.map((item) => (
+        <div>
+          <h5 class="mb-[42px]">{item.label}</h5>
+          <img src={item.imgUrl} alt={"img-" + item.label} />
+        </div>
+      ))
+    }
+  </div>
+</div>
